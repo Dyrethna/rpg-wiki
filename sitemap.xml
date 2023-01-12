@@ -56,11 +56,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/kheani/mete-canyon/</loc>
-         <lastmod>2023-01-12</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://example.com/kheani/enemies/monster/</loc>
          <lastmod>2023-01-12</lastmod>
          <changefreq>daily</changefreq>
@@ -87,6 +82,11 @@
     </url>
     <url>
          <loc>https://example.com/kheani/locations/kheani-vi/</loc>
+         <lastmod>2023-01-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://example.com/kheani/locations/mete-canyon/</loc>
          <lastmod>2023-01-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
