@@ -6,9 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         
-        <link rel="canonical" href="https://example.com/dicey-floaters/xaal/">
+        <link rel="canonical" href="https://example.com/infamous/overview/">
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Xaal - Chug's RPG Wiki</title>
+        <title>Infamous - Chug's RPG Wiki</title>
         <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -69,10 +69,10 @@
                                 </ul>
                             </li>
                             <li class="navitem">
-                                <a href="../" class="nav-link">Dicey Floaters</a>
+                                <a href="../../dicey-floaters/" class="nav-link">Dicey Floaters</a>
                             </li>
-                            <li class="navitem">
-                                <a href="../../infamous/overview/" class="nav-link">Infamous</a>
+                            <li class="navitem active">
+                                <a href="./" class="nav-link">Infamous</a>
                             </li>
                         </ul>
 
@@ -82,6 +82,16 @@
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../../dicey-floaters/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" class="nav-link disabled">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
                     </ul>
                 </div>
             </div>
@@ -100,19 +110,66 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            
-            
+            <li class="nav-item" data-level="1"><a href="#infamous" class="nav-link">Infamous</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#campaign" class="nav-link">Campaign</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#characters" class="nav-link">Characters:</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
         </ul>
     </div>
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h3 id="backstory">Backstory</h3>
-<p>Approved Bounty Hunter with the guild. Xaal is a Mandalorian foundling adopted by one of the Mandalorians who helped train the Clone Troopers. Part of the Vok'Shi Clan.</p>
-<h3 id="equipment">Equipment</h3>
-<p>Wears heavy assault style Mandalorian armour. Carries a pair of RSKF-44 heavy blaster pistols and a shoulder mounted Verpine Shatter Rifle.</p>
-<h3 id="in-combat">In combat</h3>
-<p>Xaal is often seen leading the charge, shrugging off bolts and engaging at close range with a storm of pistol fire. He received the name Atin'beviin for this tendency, translating loosely as Stubborn Spear.</p></div>
+<h1 id="infamous">Infamous</h1>
+<h2 id="campaign">Campaign</h2>
+<p>I am making this for 2 players, made on whim.</p>
+<h2 id="characters">Characters:</h2>
+<table>
+  <tr>
+    <td>Chug</td>
+    <td>
+
+[Vriligum Drelon](characters/vril.md)
+    </td>
+    <td>Duty <input id="Obliga3" maxlength="2" style="width: 75px;" value=15></td>
+    <td>Oath <input id="Obligb3" maxlength="2" style="width: 75px;" value=20></td>
+    <td id="roll0"></td>
+  </tr>
+  <tr>
+    <td>Jess</td>
+    <td>
+
+[Vaxion](vaxion.md)</td>
+    <td>TBD <input id="Obliga4" maxlength="2" style="width: 75px;" value=20></td>
+    <td>None <input id="Obligb4" maxlength="2" style="width: 75px; " value=0></td>
+    <td id="roll1"></td>
+  </tr>
+</table>
+
+<p><button type="button" onclick="obligRecalc()" >Recalculate</button></p>
+<script>
+  function obligRecalc() {
+    var totalOblig = 0;
+    for (let i = 0; ; i++) {
+      if (document.getElementById('Obliga' + i) === null) break;
+
+      document.getElementById('roll' + i).innerHTML = i;
+      let oldOblig = totalOblig;
+      totalOblig += parseInt(document.getElementById('Obliga' + i).value);
+      totalOblig += parseInt(document.getElementById('Obligb' + i).value);
+
+      let obligRoll = (oldOblig + 1) + ' - ' + totalOblig;
+      document.getElementById('roll' + i).innerHTML = obligRoll;
+    }
+  }
+</script></div>
             </div>
         </div>
 
