@@ -151,6 +151,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://example.com/kheani/pcs/theo/</loc>
+         <lastmod>2023-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://example.com/kheani/pcs/vokri/</loc>
          <lastmod>2023-01-30</lastmod>
          <changefreq>daily</changefreq>
