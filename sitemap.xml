@@ -116,6 +116,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://example.com/kheani/enemies/turret/</loc>
+         <lastmod>2023-02-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://example.com/kheani/locations/anthala-entrance/</loc>
          <lastmod>2023-02-27</lastmod>
          <changefreq>daily</changefreq>
@@ -187,6 +192,11 @@
     </url>
     <url>
          <loc>https://example.com/kheani/locations/maintenance/medical-storage/</loc>
+         <lastmod>2023-02-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://example.com/kheani/locations/maintenance/ns-corridor/</loc>
          <lastmod>2023-02-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
